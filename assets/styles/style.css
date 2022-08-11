@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
+}
+/* positioning */
+.main-article {
+  padding-top: 30vh;
+  text-align: center;
+  line-height: 2;
+}
+
+/* section style */
+.sales,
+.orders,
+.visitors {
+  display: inline-block;
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 25px;
+  text-align: left;
+  margin: 20px;
+  position: relative;
+}
+
+.sales {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 159, 124, 1) 30%,
+    rgba(255, 127, 80, 1) 70%,
+    rgba(255, 127, 80, 1) 100%
+  );
+}
+
+.orders {
+  background: linear-gradient(
+    90deg,
+    rgba(136, 157, 219, 1) 0%,
+    rgba(38, 81, 209, 1) 70%,
+    rgba(38, 81, 209, 1) 100%
+  );
+}
+
+.visitors {
+  background: linear-gradient(
+    90deg,
+    rgba(115, 222, 132, 1) 0%,
+    rgba(31, 210, 154, 1) 70%,
+    rgba(8, 176, 129, 1) 100%
+  );
+}
+
+/* content style */
+
+.cost,
+.amount,
+.number-people {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.chart-line,
+.bookmark,
+.diamond {
+  position: absolute;
+  top: 50px;
+  left: 350px;
+}
+
+/* box style */
+.box1,
+.box2 {
+  position: absolute;
+  --size: 300px;
+  border-radius: var(--size);
+  width: var(--size);
+  height: var(--size);
+  background-color: rgba(255, 255, 255, 0.329);
+}
+
+.box1 {
+  top: -50px;
+  left: 320px;
+}
+.box2 {
+  top: 180px;
+  left: 220px;
+}
